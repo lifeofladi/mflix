@@ -48,9 +48,9 @@ export default class CommentsDAO {
       const commentDoc = {
         name: user.name,
         email: user.email,
-        movie_id: ObjectID(movieId),
+        movie_id: ObjectId(movieId),
         text: comment,
-        date: date,
+        date,
       }
 
       return await comments.insertOne(commentDoc)

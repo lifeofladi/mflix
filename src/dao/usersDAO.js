@@ -64,7 +64,7 @@ export default class UsersDAO {
         {
           ...userInfo,
         },
-        { w: majority },
+        { w: "majority" },
       )
       return { success: true }
     } catch (e) {
